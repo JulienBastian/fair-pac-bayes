@@ -1,0 +1,28 @@
+dataset: --
+num_trials: --
+results_root: results
+offline: false
+
+model:
+  max_depth: None
+  criterion: gini
+  max_features: sqrt
+  min_samples_split: 2
+  min_samples_leaf: 1
+
+reduction:
+  eps: 0.001
+  max_iter: 100
+  eta0: 2.0
+  run_linprog_step: true
+
+training:
+  seed: --
+  sensible_variable: --
+  normalize_data: true
+  validation_fraction: 0.25
+
+fairness:
+  optimized_metric: --
+  favorable_label: 1
+  difference_bound: 0.0

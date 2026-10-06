@@ -1,0 +1,17 @@
+dataset: --
+num_trials: --
+results_root: results
+offline: false
+
+model:
+  C: --
+
+training:
+  seed: --
+  sensible_variable: --
+  normalize_data: true
+  validation_fraction: 0.25
+
+fairness:
+  optimized_metric: EP
+  favorable_label: 1

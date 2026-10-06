@@ -1,0 +1,40 @@
+dataset: --
+num_trials: --
+num_workers: 0
+device: cpu
+
+model:
+  n: --
+  prior: --
+  pred: --
+  samples_prop: 0.5
+  max_tree_depth: None
+  tree_criterion: gini
+  tree_class_weight: auto
+  tree_max_features: sqrt
+  tree_min_samples_split: 2
+  tree_min_samples_leaf: 1
+
+training:
+  seed: --
+  lr: 0.1
+  batch_size: 1024
+  num_epochs: 100
+  risk: --
+  fairness_metric: --
+  sensible_variable: --
+  distribution: --
+  normalize_data: True
+  splits: [0.6, 0.2, 0.2]
+  alpha: --
+  gamma: 0.
+
+bound:
+  delta: 0.05
+  union_bound_coeff : 4.0
+  type: "seeger"
+
+fairness_bound:
+  delta: 0.05
+  union_bound_coeff: 4.0
+  type: "ours_stochastic_fairness"
